@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InjuryDefs>
+	<InjuryDef>
+		<defName>PulseBurn</defName>
+		<label>Pulse Burn</label>
+		<painPerDamage>1.5</painPerDamage>
+		<oldLabel>Pulse burn scar</oldLabel>
+		<oldPainPerDamage>0.9</oldPainPerDamage> <!-- Very painful, even after healing -->
+		<naturallyHealed>false</naturallyHealed> <!-- Due to cauterization requires medical attention, never heals naturally. -->
+		<bleeding>0</bleeding>
+		<becomeOldChance>8</becomeOldChance> <!-- Significant risk of scarring tissue -->
+		<combine>false</combine>
+		<destroyedLabel>Cauterized and shot off</destroyedLabel>
+		<destroyedOutLabel>Cauterized</destroyedOutLabel>
+		<treatedWellLabel>cleaned and bandaged</treatedWellLabel>
+		<treatedLabel>poorly cleaned and bandaged</treatedLabel>
+		<innerTreatedWellLabel>sutured</innerTreatedWellLabel>
+		<innerTreatedLabel>poorly sutured</innerTreatedLabel>
+		<solidTreatedWellLabel>set</solidTreatedWellLabel>
+		<solidTreatedLabel>poorly set</solidTreatedLabel>
+	</InjuryDef>
+</InjuryDefs>

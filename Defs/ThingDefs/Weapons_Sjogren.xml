@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+	<ThingDef Name="BaseGun" Abstract="True">
+		<category>Item</category>
+		<eType>Equipment</eType>
+		<thingClass>Equipment</thingClass>
+		<label>Gun</label>
+		<equipmentType>Primary</equipmentType>
+		<isGun>True</isGun>
+		<pathCost>10</pathCost>
+		<useStandardHealth>True</useStandardHealth>
+		<selectable>True</selectable>
+		<maxHealth>100</maxHealth>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Midworld</techLevel>
+		<storeCategories>
+			<li>Weapons</li>
+		</storeCategories>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<verb>
+      <category>Nonnative</category>
+			<verbClass>ZMod._Buckshot</verbClass>
+			<cooldownTicks>40</cooldownTicks>
+			<label>VerbGun</label>
+			<description>Fire a bullet.</description>
+			<hasStandardCommand>true</hasStandardCommand>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>true</canTargetBuildings>
+				<worldObjectTargetsMustBeAutoAttackable>true</worldObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+			<canMiss>true</canMiss>
+		</verb>
+	</ThingDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>Bullet</label>
+		<useStandardHealth>False</useStandardHealth>
+		<neverMultiSelect>True</neverMultiSelect>
+		<baseMaterialType>Transparent</baseMaterialType>
+	</ThingDef>
+
+	<!-- == Danish Semi-Automatic "Sjögren" Shotgun === -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SjogrenShotgun</defName>
+		<label>Buckshot</label>
+		<texturePath>Things/Projectile/Bullet_Small</texturePath>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>9</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseGun">
+		<defName>_SjogrenShotgun</defName>
+		<label>Sjögren Shotgun</label>
+		<description>An old, semi-automatic shotgun with a slide. Loaded with buckshot.
+		</description>
+		<texturePath>Things/Item/Equipment/SjogrenShotgun</texturePath>
+		<soundInteract>InteractShotgun</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<basePrice>300</basePrice>
+		<verb>
+			<projectileDef>Bullet_SjogrenShotgun</projectileDef>
+			<warmupTicks>150</warmupTicks>
+			<cooldownTicks>180</cooldownTicks>
+			<burstShotCount>4</burstShotCount>
+			<ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+			<range>16</range>
+      <accuracyTouch>0.60</accuracyTouch>
+      <accuracyShort>0.40</accuracyShort>
+      <accuracyMedium>0.30</accuracyMedium>
+      <accuracyLong>0.05</accuracyLong>
+			<fireSound>ShotShotgun</fireSound>
+		</verb>
+	</ThingDef>
+	
+</ThingDefs>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DamageTypes>
+
+  <!-- External violence -->
+  <DamageTypeDef>
+	<defName>Pulse</defName>
+	<makesBlood>false</makesBlood> <!-- Cauterizes -->
+    <externalViolence>true</externalViolence>
+    <battleWound>true</battleWound>
+    <deathMessage>{0} died from a pulse round.</deathMessage>
+	<injury>PulseBurn</injury>
+  </DamageTypeDef>
+  
+  <DamageTypeDef>
+	<defName>Beanbag</defName>
+	<makesBlood>false</makesBlood> <!-- LTL weapon -->
+    <externalViolence>false</externalViolence>
+    <battleWound>false</battleWound>
+    <deathMessage>{0} has been beanbagged to death.</deathMessage>
+	<injury>Bruise</injury>
+  </DamageTypeDef>
+
+</DamageTypes>

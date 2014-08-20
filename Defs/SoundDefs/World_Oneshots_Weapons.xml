@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-SoundDef>
+  <SoundDef>
+    <defName>ShotFlamenwerfer</defName>
+    <label></label>
+    <description></description>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/Flamenwerfer</clipPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>0.809239</min>
+          <max>0.9788048</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Shot357Revolver</defName>
+    <label></label>
+    <description></description>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/357Revolver</clipPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>0.809239</min>
+          <max>0.9788048</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ShotMusket</defName>
+    <label></label>
+    <description></description>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/Musket</clipPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>0.809239</min>
+          <max>0.9788048</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ShotSmartRifle</defName>
+    <label></label>
+    <description></description>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/SmartRifle</clipPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>0.809239</min>
+          <max>0.9788048</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</DefPackage-SoundDef>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+	<ThingDef Name="BaseGun" Abstract="True">
+		<category>Item</category>
+		<eType>Equipment</eType>
+		<thingClass>Equipment</thingClass>
+		<label>Gun</label>
+		<equipmentType>Primary</equipmentType>
+		<isGun>True</isGun>
+		<pathCost>10</pathCost>
+		<useStandardHealth>True</useStandardHealth>
+		<selectable>True</selectable>
+		<maxHealth>100</maxHealth>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Midworld</techLevel>
+		<storeCategories>
+			<li>Weapons</li>
+		</storeCategories>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<verb>
+      <category>Nonnative</category>
+			<verbClass>Verb_Shoot</verbClass>
+			<cooldownTicks>40</cooldownTicks>
+			<label>VerbGun</label>
+			<description>Fire a bullet.</description>
+			<hasStandardCommand>true</hasStandardCommand>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<worldObjectTargetsMustBeAutoAttackable>true</worldObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+			<canMiss>true</canMiss>
+		</verb>
+	</ThingDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>Bullet</label>
+		<useStandardHealth>False</useStandardHealth>
+		<neverMultiSelect>True</neverMultiSelect>
+		<baseMaterialType>Transparent</baseMaterialType>
+	</ThingDef>
+
+	<!-- === Smart Rifle ============================== -->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SmartRifle</defName>
+		<label>Smart Rifle Pulse</label>
+		<texturePath>Things/Projectile/Bullet_Small</texturePath>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Pulse</damageDef>
+			<DamageAmountBase>70</DamageAmountBase>
+			<Speed>110</Speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>_SmartRifle</defName>
+		<label>Smart Rifle</label>
+		<description>An advanced pulse-based police rifle from a dystopian world. Despite the advanced software in the scope, it cannot recongize non-living things as valid targets, and still suffers in short range shooting due to the aim time.
+		</description>
+		<texturePath>Things/Item/Equipment/SmartRifle</texturePath>
+		<soundInteract>InteractRifle</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<basePrice>604</basePrice>
+		<verb>
+			<projectileDef>Bullet_SmartRifle</projectileDef>
+			<accuracyTouch>0.60</accuracyTouch>
+			<accuracyShort>0.80</accuracyShort>
+			<accuracyMedium>0.95</accuracyMedium>
+			<accuracyLong>0.99</accuracyLong>
+			<warmupTicks>300</warmupTicks> <!-- 5 second aim time -->
+			<cooldownTicks>120</cooldownTicks> <!-- 2 sec C/D -->
+			<range>56</range>
+			<fireSound>ShotSmartRifle</fireSound>
+		</verb>
+	</ThingDef>
+	
+</ThingDefs>

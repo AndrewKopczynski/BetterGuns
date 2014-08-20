@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+	<ThingDef Name="BaseGun" Abstract="True">
+		<category>Item</category>
+		<eType>Equipment</eType>
+		<thingClass>Equipment</thingClass>
+		<label>Gun</label>
+		<equipmentType>Primary</equipmentType>
+		<isGun>True</isGun>
+		<pathCost>10</pathCost>
+		<useStandardHealth>True</useStandardHealth>
+		<selectable>True</selectable>
+		<maxHealth>100</maxHealth>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Midworld</techLevel>
+		<storeCategories>
+			<li>Weapons</li>
+		</storeCategories>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<verb>
+      <category>Nonnative</category>
+			<verbClass>ZMod._Buckshot</verbClass>
+			<cooldownTicks>40</cooldownTicks>
+			<label>VerbGun</label>
+			<description>Fire a bullet.</description>
+			<hasStandardCommand>true</hasStandardCommand>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>true</canTargetBuildings>
+				<worldObjectTargetsMustBeAutoAttackable>true</worldObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+			<canMiss>true</canMiss>
+		</verb>
+	</ThingDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>Bullet</label>
+		<useStandardHealth>False</useStandardHealth>
+		<neverMultiSelect>True</neverMultiSelect>
+		<baseMaterialType>Transparent</baseMaterialType>
+	</ThingDef>
+
+	<!-- == 12 Gauge Shotgun ========================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_12GShotgun</defName>
+		<label>Buckshot</label>
+		<texturePath>Things/Projectile/Bullet_Small</texturePath>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+			<DamageAmountBase>9</DamageAmountBase>
+			<Speed>60</Speed>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseGun">
+		<defName>Gun_PumpShotgun</defName> <!-- Replaces PumpShotgun -->
+		<label>12 Gauge</label>
+		<description>A 12 gauge shotgun, perfect for putting several nasty holes through its targets.
+		</description>
+		<texturePath>Things/Item/Equipment/12Gauge</texturePath>
+		<soundInteract>InteractShotgun</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<basePrice>282</basePrice>
+		<verb>
+			<projectileDef>Bullet_12GShotgun</projectileDef>
+			<warmupTicks>128</warmupTicks>
+			<range>20</range>
+			  <accuracyTouch>0.98</accuracyTouch>
+			  <accuracyShort>0.70</accuracyShort>
+			  <accuracyMedium>0.48</accuracyMedium>
+			  <accuracyLong>0.12</accuracyLong>
+			<fireSound>ShotShotgun</fireSound>
+		</verb>
+	</ThingDef>
+
+	<!-- == 12 Gauge Shotgun (Incendiary Ammo) ======== -->
+<!--
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_12GShotgun_Incendiary</defName>
+		<label>Incendiary Shotgun Pellet</label>
+		<texturePath>Things/Projectile/Charge_Small</texturePath>
+		<thingClass>BulletIncendiary</thingClass>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>40</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>_12GShotgun_Incendiary</defName>
+		<label>12 Gauge Shotgun (Incendiary)</label>
+		<description>A 12 gauge shotgun, loaded with Incendiary shells.</description>
+		<texturePath>Things/Item/Equipment/Shotgun</texturePath>
+		<soundInteract>InteractShotgun</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<basePrice>550</basePrice>
+		<verb>
+			<projectileDef>Bullet_12GShotgun_Incendiary</projectileDef>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<warmupTicks>108</warmupTicks>
+			<cooldownTicks>60</cooldownTicks>
+			<range>18</range>
+			<accuracyTouch>0.50</accuracyTouch>
+			<accuracyShort>0.50</accuracyShort>
+			<accuracyMedium>0.50</accuracyMedium>
+			<accuracyLong>0.50</accuracyLong>
+			<burstShotCount>1</burstShotCount>
+			<fireSound>ShotShotgun</fireSound>
+		</verb>
+	</ThingDef>
+	-->
+</ThingDefs>

@@ -1,0 +1,70 @@
+v0.05
+!! Changed human health scaling from 1.0x to 2.5x. Gun damage is still 3.0x what it is in the vanilla, so this should hopefully make injuries more appropriate. I did plenty of testing on this, and it seemed to be in a good spot. This may conflict with other mods, and if it's too big of a burden then I'll just bump weapon damage down instead and leave health scaling as it is.
+
+- Nerfed M24 from 120 damage to 100 damage. You're still dead without armor on a bad shot, but will survive major organ damage if you're wearing armor.
+- Nerfed Smart Rifle from 99 damage to 70 damage. It's a police rifle, it doesn't blast arms and legs off.
+- Changed Sjogren to use buckshot instead of birdshot.
+- Nerfed 357 to 95% / 92% / 86% / 75% (from 100% / 96% / 86% / 78%)
+- Raised Shotgun accuracy and range slightly.
+- Raised the M24's touch accuracy from 50% to 60% to make the accuracy curve smoother
+
+- Added stats for the Gauss Gun (high damange, high cooldown, medium range)
+- Added stats for the Spas 12 (Faster than the 12 Gauge, shorter range, slightly less damage)
+- Added stats for the USP Match (Lower damage than the base pistol, more accurate and faster overall)
+- Added stats for the MP7 (Great close-quarters, awful at longer ranges)
+
+- Added the Heavy Railgun Rifle. It's heavy, and it's a railgun. Should be pretty rare to find.
+- Added the MP7, a close-quarters SMG
+- Finished art for the Flare Gun, though I'm not completely happy with it. Probably will redo.
+- Added the Smart Rifle, it uses pulse rounds. Can't target buildings.
+
+- Added a new kind of damage and respective injury: Pulse and Pulse burn
+-> Pulse burns have a high chance of scaring
+-> Pulse rounds don't make targets bleed due to cauterizing wounds on contact
+
+
+v0.04
+- Removed guaranteed hits entirely from flamethrower, flames may only happen to intercept the target.
+- Gave the flamethrower some actual, playable stats. It still feels a little strong, but I'll see how it plays out in actual games.
+- Nerfed shirt damage reduction to 2% from 3%.
+- Nerfed jacket/duster damage reduction to 3% from 8%, but removed the move speed penalty.
+- Nerfed body armor from 40% to 35%. Wearing a shirt+duster+body armor gave you 51% damage reduction originally,
+which was a little a little funny seeing how big a difference wearing a jacket was. It made power armor too useless though.
+
+- Changed power armor damage reduction to 68%, from 70%. You're probably always going to wear at least a shirt, right?
+- Scrapped birdshot on the Sjogren for now. It now uses the 12 Gauge's buckshot instead.
+- Rebalanced Lee Enfield price to 203 silver.
+- Rebalanced M16 price to 308 silver.
+- Rebalanced M24 price to 267 silver.
+- Rebalanced Uzi price to 224 silver.
+- Rebalanced L-15 LMG price to 356 silver.
+- Rebalanced R-4 Charge Rifle damage to 356 silver.
+- Rebalanced Minigun price to 564 silver.
+- The T-9 Launcher has been reworked into a gun that fires explosive fire payloads. Excellent for flushing people out of cover, but not very damaging. Rebalanced the price to 244 silver.
+- Rebalanced 357 price to 296 silver from 60 silver.
+- Rebalanced 12 Gauge price to 282 silver from 400 silver.
+- Rebalanced Sjogren price to 300 silver from 400 silver.
+- Added Musket price. It's not very high.
+- Added Smart Rifle price, 604 silver.
+- Rebalanced Makeshift Flamethrower price to 460 silver
+- Attempted to clean up some code, made some nice descriptions for the guns.
+- Added a Credits.txt for sound, code, balancing, etc.
+
+v0.03
+- Updated fire code to make shotguns feel less luck-reliant. 
+-> They can no longer hit every single pellet in one godly shot (but have a guaranteed amount of pellet hits on a true "hit").
+
+- Added Musket (credits to Bog for the texture)
+- Added Smart Rifle
+
+v0.02
+- Added Makeshift Flamethrower sounds
+- Added 357 Revolver fire sound
+- Completely replaced vanilla "Pump Shotgun" with the 12 Gauge Shotgun.
+
+v0.01
+- Initial version!
+- Added 12 Gauge Shotgun, it's got spread like an actual shotgun!
+- Added Sjogren Shotgun, an old semi-auto shotty.
+- Added 357 Revolver, a high-power, high recoil handgun.
+- Added Makeshift Flamethrower, a brutal and destructive that burns all in its way.
