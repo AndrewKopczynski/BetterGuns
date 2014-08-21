@@ -1,3 +1,7 @@
+v0.06
+- Spent some time on improving the spread sheet, so it calculates DPS for us.
+-> Hopefull this will help us with balancing, as we had to calculate it manually before.
+
 v0.05
 !! Changed human health scaling from 1.0x to 2.5x. Gun damage is still 3.0x what it is in the vanilla, so this should hopefully make injuries more appropriate. I did plenty of testing on this, and it seemed to be in a good spot. This may conflict with other mods, and if it's too big of a burden then I'll just bump weapon damage down instead and leave health scaling as it is.
 
