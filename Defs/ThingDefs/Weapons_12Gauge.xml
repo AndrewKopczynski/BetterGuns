@@ -59,13 +59,13 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_12GShotgun</defName>
-		<label>Buckshot</label>
+		<label>12 gauge buckshot</label>
 		<texturePath>Things/Projectile/Bullet_Small</texturePath>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
       <damageDef>Bullet</damageDef>
-			<DamageAmountBase>9</DamageAmountBase>
-			<Speed>60</Speed>
+			<DamageAmountBase>6</DamageAmountBase>
+			<Speed>55</Speed>
 		</projectile>
 	</ThingDef>
 

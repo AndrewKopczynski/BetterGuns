@@ -64,7 +64,7 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Pulse</damageDef>
-			<DamageAmountBase>70</DamageAmountBase>
+			<DamageAmountBase>28</DamageAmountBase>
 			<Speed>110</Speed>
 		</projectile>
 	</ThingDef>

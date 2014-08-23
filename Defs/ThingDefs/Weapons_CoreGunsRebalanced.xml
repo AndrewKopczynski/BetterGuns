@@ -55,7 +55,7 @@
 		<baseMaterialType>Transparent</baseMaterialType>
 	</ThingDef>
 
-	<!-- === PISTOL (10 DAMAGE -> 30 DAMAGE) ========================== -->
+	<!-- === PISTOL (10 DAMAGE -> 10 DAMAGE) ========================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_Pistol</defName>
@@ -64,7 +64,7 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<DamageAmountBase>30</DamageAmountBase> <!-- x3 -->
+			<DamageAmountBase>10</DamageAmountBase> <!-- x3 -->
 			<Speed>55</Speed>
 		</projectile>
 	</ThingDef>
@@ -90,14 +90,14 @@
 
 	<!-- === PUMP SHOTGUN IS REPLACED WITH 12 GAUGE SHOTGUN === -->
 
-	<!-- === LEE ENFIELD (18 DAMAGE -> 41 DAMAGE) ===== -->
+	<!-- === LEE ENFIELD (18 DAMAGE -> 22 DAMAGE) ===== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_LeeEnfield</defName>
 		<label>Rifle bullet</label>
 		<projectile>
       <damageDef>Bullet</damageDef>
-			<damageAmountBase>41</damageAmountBase>
+			<damageAmountBase>22</damageAmountBase>
 			<speed>70</speed>
 		</projectile>
 		<texturePath>Things/Projectile/Bullet_big</texturePath>
@@ -122,7 +122,7 @@
 		</verb>
 	</ThingDef>
 
-	<!-- === M16 (7 DAMAGE -> 21 DAMAGE) ============== -->
+	<!-- === M16 (7 DAMAGE -> 12 DAMAGE) ============== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_M16Rifle</defName>
@@ -130,7 +130,7 @@
 		<texturePath>Things/Projectile/Bullet_Small</texturePath>
 		<projectile>
       <damageDef>Bullet</damageDef>
-			<damageAmountBase>21</damageAmountBase>
+			<damageAmountBase>12</damageAmountBase>
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
@@ -156,7 +156,7 @@
 		</verb>
 	</ThingDef>
 
-	<!-- === M24 (40 DAMAGE -> 120 DAMAGE) ============ -->
+	<!-- === M24 (40 DAMAGE -> 48 DAMAGE) ============ -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_M24Rifle</defName>
@@ -164,7 +164,7 @@
 		<texturePath>Things/Projectile/Bullet_Big</texturePath>
 		<projectile>
       <damageDef>Bullet</damageDef>
-			<damageAmountBase>120</damageAmountBase>
+			<damageAmountBase>48</damageAmountBase>
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
@@ -192,7 +192,7 @@
 		</weaponTags>
 	</ThingDef>
 
-	<!-- === UZI (5 DAMAGE -> 20 DAMAGE) ============== -->
+	<!-- === UZI (5 DAMAGE -> 8 DAMAGE) ============== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_Uzi</defName>
@@ -200,7 +200,7 @@
 		<texturePath>Things/Projectile/Bullet_Small</texturePath>
 		<projectile>
       <damageDef>Bullet</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>8</damageAmountBase>
 			<speed>55</speed>
 		</projectile>
 	</ThingDef>
@@ -226,7 +226,7 @@
 		</verb>
 	</ThingDef>
 
-	<!-- === T-9 (4 DAMAGE -> 12 DAMAGE) ============== -->
+	<!-- === T-9 (4 DAMAGE -> 8 DAMAGE) ============== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_T9IncendiaryLauncher</defName>
@@ -244,7 +244,7 @@
 		
 		<projectile>
 			<damageDef>Flame</damageDef>
-			<damageAmountBase>12</damageAmountBase>
+			<damageAmountBase>8</damageAmountBase>
 			<speed>40</speed>
 			<explosionRadius>1.2</explosionRadius >
 			<postExplosionSpawnThingDef>Puddle_Fuel</postExplosionSpawnThingDef>
@@ -275,7 +275,7 @@
 	</ThingDef>
 
 
-	<!-- === L-15 LMG (7 DAMAGE -> 21 DAMAGE) ========= -->
+	<!-- === L-15 LMG (7 DAMAGE -> 10 DAMAGE) ========= -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_L15LMG</defName>
@@ -283,7 +283,7 @@
 		<texturePath>Things/Projectile/Bullet_Small</texturePath>
 		<projectile>
       <damageDef>Bullet</damageDef>
-			<damageAmountBase>21</damageAmountBase>
+			<damageAmountBase>10</damageAmountBase>
 			<speed>40</speed>
 		</projectile>
 	</ThingDef>
@@ -310,15 +310,15 @@
 	</ThingDef>
 
 
-  <!-- === R-4 CHARGE RIFLE (14 DAMAGE -> 30 DAMAGE) === -->
+  <!-- === R4 CHARGE RIFLE (14 DAMAGE -> 18 DAMAGE) === -->
 
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_R4ChargeRifle</defName>
     <label>Charge shot</label>
     <texturePath>Things/Projectile/Charge_Small</texturePath>
     <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>30</damageAmountBase>
+      <damageDef>Pulse</damageDef>
+      <damageAmountBase>18</damageAmountBase>
       <speed>70</speed>
     </projectile>
   </ThingDef>
@@ -350,7 +350,7 @@
 
 
 
-  <!-- === IMPROVISED TURRET GUN (7 DAMAGE -> 21 DAMAGE) === -->
+  <!-- === IMPROVISED TURRET GUN (7 DAMAGE -> 10 DAMAGE) === -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_TurretImprovised</defName>
@@ -358,7 +358,7 @@
 		<texturePath>Things/Projectile/Bullet_Small</texturePath>
 		<projectile>
       <damageDef>Bullet</damageDef>
-			<damageAmountBase>21</damageAmountBase>
+			<damageAmountBase>10</damageAmountBase>
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
@@ -389,7 +389,7 @@
 	</ThingDef>
 
 
-  <!-- === MINIGUN (8 DAMAGE -> 18 DAMAGE) ========== -->
+  <!-- === MINIGUN (8 DAMAGE -> 8 DAMAGE) ========== -->
 
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_Minigun</defName>
@@ -397,7 +397,7 @@
     <texturePath>Things/Projectile/Bullet_Small</texturePath>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>24</damageAmountBase>
+      <damageAmountBase>8</damageAmountBase>
       <speed>70</speed>
     </projectile>
   </ThingDef>
@@ -438,7 +438,7 @@
     <texturePath>Things/Projectile/Charge_Small</texturePath>
     <baseMaterialType>MotePostLight</baseMaterialType>
     <projectile>
-      <damageDef>Bullet</damageDef>
+      <damageDef>Pulse</damageDef> <!-- Now with added scarring! -->
       <damageAmountBase>18</damageAmountBase>
       <speed>90</speed>
     </projectile>
@@ -518,7 +518,7 @@
 
   
   
-  <!-- === MECH. CHARGE LANCE (27 DAMAGE -> 45 DAMAGE) ========== -->
+  <!-- === MECH. CHARGE LANCE (27 DAMAGE -> 30 DAMAGE) ========== -->
 
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_ChargeLance</defName>
@@ -528,7 +528,7 @@
     <overdraw>true</overdraw>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>45</damageAmountBase>
+      <damageAmountBase>30</damageAmountBase>
       <speed>120</speed>
     </projectile>
   </ThingDef>

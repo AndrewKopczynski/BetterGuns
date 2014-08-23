@@ -61,7 +61,7 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<DamageAmountBase>80</DamageAmountBase>
+			<DamageAmountBase>35</DamageAmountBase>
 			<Speed>80</Speed>
 		</projectile>
 	</ThingDef>
@@ -96,8 +96,8 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<DamageAmountBase>35</DamageAmountBase>
-			<Speed>80</Speed>
+			<DamageAmountBase>15</DamageAmountBase>
+			<Speed>70</Speed>
 		</projectile>
 	</ThingDef>
 	
@@ -131,7 +131,7 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<DamageAmountBase>20</DamageAmountBase>
+			<DamageAmountBase>10</DamageAmountBase>
 			<Speed>55</Speed>
 		</projectile>
 	</ThingDef>
@@ -167,7 +167,7 @@ This gun looks like a target-shooting variant, and the slide has been replaced w
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<DamageAmountBase>20</DamageAmountBase>
+			<DamageAmountBase>8</DamageAmountBase>
 			<Speed>60</Speed>
 		</projectile>
 	</ThingDef>
@@ -205,7 +205,7 @@ This gun looks like a target-shooting variant, and the slide has been replaced w
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<DamageAmountBase>55</DamageAmountBase>
+			<DamageAmountBase>25</DamageAmountBase>
 			<Speed>140</Speed>
 		</projectile>
 	</ThingDef>
@@ -220,7 +220,7 @@ The unwieldy nature of the prototype also makes it hard to aim in close-quarters
 		<soundInteract>InteractRifle</soundInteract>
 		<tradersCarry>false</tradersCarry>
 		<basePrice>700</basePrice>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Midworld</techLevel>
 		<verb>
 			<projectileDef>Bullet_GaussGun</projectileDef>
 			<accuracyTouch>1</accuracyTouch>
@@ -228,7 +228,7 @@ The unwieldy nature of the prototype also makes it hard to aim in close-quarters
 			<accuracyMedium>0.80</accuracyMedium>
 			<accuracyLong>0.65</accuracyLong>
 			<warmupTicks>60</warmupTicks>
-			<cooldownTicks>90</cooldownTicks> <!-- 1.5 sec CD, for recoil/balance -->
+			<cooldownTicks>90</cooldownTicks> <!-- Probably need to increase -->
 			<range>28</range>
 			<fireSound>ChargeLance_Fire</fireSound>
 		</verb>

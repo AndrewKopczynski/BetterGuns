@@ -1,8 +1,62 @@
-v0.06
+  ///////////
+ // v0.06 //
+///////////
 - Spent some time on improving the spread sheet, so it calculates DPS for us.
+-> Simplified a lot of explanations on the sheet
+ 
 -> Hopefull this will help us with balancing, as we had to calculate it manually before.
 
-v0.05
+!! Reverted Human health scaling from 2.5x to 1.0x. Gun damage is approx 1.2x higher than vanilla still. !!
+- Scrapped all the old values, here's a new list of damage buffs:
+
+- Pistol damage remains at 10 from vanilla
+- Lee-Enfield damage up to 22 (from 18)
+- M-16 damage up to 12 (from 7)
+- M-24 damage up to 48 (from 40)
+-> This means that unarmored targets are dead meat. Wear armor against snipers, it WILL save your life.
+
+- Uzi damage up to 8 (from 5)
+- L-15 LMG damage up to 10 (from 7)
+- R4 Charge Rifle damage up to 16 (from 14)
+-> R4 Charge Rifle now does pulse damage, causing pulse burns.
+-> Pulse burns don't heal naturally, require full doctoring care. They don't bleed though due to cauterization,
+so you're not in any damager of bleeding out on the battlefield.
+
+- Improvised Turret Gun damage up to 10 (from 7)
+- Minigun damage remains at 8 from vanilla
+- Heavy Charge Blaster down to 16 (from 18)
+-> HCB now does pulse damage, causing pulse burns like the R4 charge rifle
+
+- Inferno Cannon damage remains at 50 from vanilla
+- Charge Lance damage up to 30 (from 27)
+- T-9 Incendiary Launcher damage up to 8 (from 4)
+-> T-9 Launcher bolts are now explosive in a 1.2 blast radius. Great for flushing people out of cover!
+
+- Frag Grenade damage up to 50 (from 40)
+- Molotov Cocktail damage up to 15 (from 10, though they're still really inaccurate)
+- EMP grenade damage remaines at 80 from vanilla
+
+- Short Bow damage down to 7 from 10
+- Great Bow damage down to 10 from 15
+- Pila damage down to 20 from 30
+- Handful of Stones damage down to 3 from 6
+
+- 357 revolver damage is now 15
+- 12 Gauge pellet damage is now 6 (fires 9 at once)
+- Sjogren pellet damage is now 6 (fires 9 at once)
+- Musket round shot damage is now 35
+- Smart Rifle pulse round damage is now 28
+-> Armored targets should never suffer permanent organ damage
+-> Still does pulse damage/inflicts pulse burns
+
+- Flamethrower damange remains at 1, but has regained the ability to fire five "flames" per shot
+- Railgun Rifle damage is now 25
+- USP Match damage is now 10
+- MP7 damage is now 8
+
+  ///////////
+ // v0.05 //
+///////////
 !! Changed human health scaling from 1.0x to 2.5x. Gun damage is still 3.0x what it is in the vanilla, so this should hopefully make injuries more appropriate. I did plenty of testing on this, and it seemed to be in a good spot. This may conflict with other mods, and if it's too big of a burden then I'll just bump weapon damage down instead and leave health scaling as it is.
 
 - Nerfed M24 from 120 damage to 100 damage. You're still dead without armor on a bad shot, but will survive major organ damage if you're wearing armor.
@@ -26,8 +80,9 @@ v0.05
 -> Pulse burns have a high chance of scaring
 -> Pulse rounds don't make targets bleed due to cauterizing wounds on contact
 
-
-v0.04
+  ///////////
+ // v0.04 //
+///////////
 - Removed guaranteed hits entirely from flamethrower, flames may only happen to intercept the target.
 - Gave the flamethrower some actual, playable stats. It still feels a little strong, but I'll see how it plays out in actual games.
 - Nerfed shirt damage reduction to 2% from 3%.
@@ -54,19 +109,25 @@ which was a little a little funny seeing how big a difference wearing a jacket w
 - Attempted to clean up some code, made some nice descriptions for the guns.
 - Added a Credits.txt for sound, code, balancing, etc.
 
-v0.03
+  ///////////
+ // v0.03 //
+///////////
 - Updated fire code to make shotguns feel less luck-reliant. 
 -> They can no longer hit every single pellet in one godly shot (but have a guaranteed amount of pellet hits on a true "hit").
 
 - Added Musket (credits to Bog for the texture)
 - Added Smart Rifle
 
-v0.02
+  ///////////
+ // v0.02 //
+///////////
 - Added Makeshift Flamethrower sounds
 - Added 357 Revolver fire sound
 - Completely replaced vanilla "Pump Shotgun" with the 12 Gauge Shotgun.
 
-v0.01
+  ///////////
+ // v0.01 //
+///////////
 - Initial version!
 - Added 12 Gauge Shotgun, it's got spread like an actual shotgun!
 - Added Sjogren Shotgun, an old semi-auto shotty.

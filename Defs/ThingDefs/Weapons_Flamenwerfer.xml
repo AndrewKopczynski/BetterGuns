@@ -61,7 +61,6 @@
 		<defName>FlamenFlame</defName>
 		<label>Flamenwerfer Flame</label>
 		<texturePath>Things/Special/Fire/FireA</texturePath>
-		
 		<overdraw>true</overdraw>
 		<thingClass>BulletIncendiary</thingClass>
 		<projectile>
