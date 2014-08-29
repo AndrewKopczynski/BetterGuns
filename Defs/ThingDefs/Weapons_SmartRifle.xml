@@ -77,7 +77,7 @@
 		<texturePath>Things/Item/Equipment/SmartRifle</texturePath>
 		<soundInteract>InteractRifle</soundInteract>
 		<tradersCarry>True</tradersCarry>
-		<basePrice>604</basePrice>
+		<basePrice>514</basePrice>
 		<verb>
 			<projectileDef>Bullet_SmartRifle</projectileDef>
 			<accuracyTouch>0.60</accuracyTouch>

@@ -81,8 +81,8 @@
 			<accuracyShort>0.20</accuracyShort>
 			<accuracyMedium>0.10</accuracyMedium>
 			<accuracyLong>0.05</accuracyLong>
-			<warmupTicks>150</warmupTicks>
-			<cooldownTicks>300</cooldownTicks> <!-- 5 second reload time -->
+			<warmupTicks>240</warmupTicks>
+			<cooldownTicks>420</cooldownTicks> <!-- blaze it -->
 			<range>30</range>
 			<fireSound>ShotMusket</fireSound>
 		</verb>
@@ -109,7 +109,7 @@
 		<texturePath>Things/Item/Equipment/357Revolver</texturePath>
 		<soundInteract>InteractPistol</soundInteract>
 		<tradersCarry>True</tradersCarry>
-		<basePrice>296</basePrice>
+		<basePrice>202</basePrice>
 		<verb>
 			<projectileDef>Bullet_357Revolver</projectileDef>
 			<accuracyTouch>1</accuracyTouch>
@@ -117,9 +117,9 @@
 			<accuracyMedium>0.86</accuracyMedium>
 			<accuracyLong>0.78</accuracyLong>
 			<warmupTicks>60</warmupTicks>
-			<cooldownTicks>90</cooldownTicks> <!-- 1.5 sec CD, for recoil/balance -->
+			<cooldownTicks>90</cooldownTicks>
 			<range>30</range>
-			<fireSound>ShotPistol</fireSound>
+			<fireSound>Shot357Revolver</fireSound>
 		</verb>
 	</ThingDef>
 	
@@ -145,7 +145,7 @@ This gun looks like a target-shooting variant, and the slide has been replaced w
 		<texturePath>Things/Item/Equipment/USPMatch</texturePath>
 		<soundInteract>InteractPistol</soundInteract>
 		<tradersCarry>True</tradersCarry>
-		<basePrice>296</basePrice>
+		<basePrice>173</basePrice>
 		<verb>
 			<projectileDef>Bullet_USPMatch</projectileDef>
 			<accuracyTouch>93</accuracyTouch>
@@ -153,7 +153,7 @@ This gun looks like a target-shooting variant, and the slide has been replaced w
 			<accuracyMedium>0.55</accuracyMedium>
 			<accuracyLong>0.35</accuracyLong>
 			<warmupTicks>60</warmupTicks>
-			<cooldownTicks>90</cooldownTicks> <!-- 1.5 sec CD, for recoil/balance -->
+			<cooldownTicks>90</cooldownTicks>
 			<range>24</range>
 			<fireSound>ShotPistol</fireSound>
 		</verb>
@@ -174,13 +174,13 @@ This gun looks like a target-shooting variant, and the slide has been replaced w
 	
 	<ThingDef ParentName="BaseGun">
 		<defName>MP7_</defName>
-		<label>MP7 SMG</label>
-		<description>A compact, close-quarters SMG with a foldable foregrip and adjustable buttstock.
+		<label>MP7</label>
+		<description>A compact, close-quarters submachine gun with a foldable foregrip and adjustable buttstock.
 		</description>
 		<texturePath>Things/Item/Equipment/MP7</texturePath>
 		<soundInteract>InteractSMG</soundInteract>
 		<tradersCarry>True</tradersCarry>
-		<basePrice>296</basePrice>
+		<basePrice>285</basePrice>
 		<verb>
 			<projectileDef>Bullet_MP7_</projectileDef>
 			<accuracyTouch>0.90</accuracyTouch>
@@ -213,22 +213,23 @@ This gun looks like a target-shooting variant, and the slide has been replaced w
 	<ThingDef ParentName="BaseGun">
 		<defName>_GaussGun</defName>
 		<label>Railgun Rifle</label>
-		<description>Some sort of prototype weapon - it's difficult to tell where exactly from. It fires solid metal slugs at excessive speeds using extremely powerful coiled electromagnets. While powerful, it comes with a significant recharge time between shots.
+		<description>Some sort of prototype heavy weapon - it's difficult to tell where exactly from. It fires solid metal slugs at excessive speeds using extremely powerful coiled electromagnets. While powerful, it comes with a significant recharge time between shots.
 The unwieldy nature of the prototype also makes it hard to aim in close-quarters. Best used at a medium range.
 		</description>
 		<texturePath>Things/Item/Equipment/GaussGun</texturePath>
 		<soundInteract>InteractRifle</soundInteract>
 		<tradersCarry>false</tradersCarry>
-		<basePrice>700</basePrice>
+		<basePrice>210</basePrice>
 		<techLevel>Midworld</techLevel>
 		<verb>
 			<projectileDef>Bullet_GaussGun</projectileDef>
-			<accuracyTouch>1</accuracyTouch>
+			<accuracyTouch>0.55</accuracyTouch>
 			<accuracyShort>0.65</accuracyShort>
 			<accuracyMedium>0.80</accuracyMedium>
 			<accuracyLong>0.65</accuracyLong>
+			<forcedMissRadius>1.0</forcedMissRadius>
 			<warmupTicks>60</warmupTicks>
-			<cooldownTicks>90</cooldownTicks> <!-- Probably need to increase -->
+			<cooldownTicks>120</cooldownTicks>
 			<range>28</range>
 			<fireSound>ChargeLance_Fire</fireSound>
 		</verb>

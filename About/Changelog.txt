@@ -54,6 +54,24 @@ so you're not in any damager of bleeding out on the battlefield.
 - USP Match damage is now 10
 - MP7 damage is now 8
 
+- Tweaked all of the guns base prices. Most of the vanilla guns only went slightly up in cost
+ (~10 silver or so except for the M24, which has jumped up), while new modded weapons went slightly down in cost
+- Railgun rifle price down from 700 to 210, should be balanced enough for regular play
+- Railgun rifle now has a forced miss radius, should be interesting to see how it works now
+
+- Added 5% pulse burn resistance to the M1 helmet and Kevlar helmet. They don't do much to stop energy/pulse rounds, really
+- Added 10% pulse burn resistance to the vest plate/body armor (it's better than nothing)
+- Bumped gunshot resistance to 60% on the powered armor set (it was 35% before, the same as a midworld vest plate)
+- Added 50% pulse burn resistance to the powered armor set, as they're built for advanced warfare
+- Fixed T-Shirt not covering the arms
+- Fixed Buttoned Shirt not covering the arms
+- Fixed Duster not covering the arms/legs. It's a long coat, after all
+-> Tweaked the stats slightly down to compensate for this, so it's not just a straight upgrade
+
+- Fixed Jacket not covering the arms
+- Powered armor now covers the entire lower body
+-> Temporary until pants and stuff are introduced
+
   ///////////
  // v0.05 //
 ///////////

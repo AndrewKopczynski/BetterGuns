@@ -109,7 +109,7 @@
 		<texturePath>Things/Item/Equipment/LeeEnfield</texturePath>
 		<soundInteract>InteractRifle</soundInteract>
 		<tradersCarry>true</tradersCarry>
-		<basePrice>203</basePrice>
+		<basePrice>209</basePrice>
 		<verb>
 			<projectileDef>Bullet_LeeEnfield</projectileDef>
 			<warmupTicks>182</warmupTicks>
@@ -141,7 +141,7 @@
 		<texturePath>Things/Item/Equipment/M-16</texturePath>
 		<soundInteract>InteractRifle</soundInteract>
 		<tradersCarry>true</tradersCarry>
-		<basePrice>308</basePrice>
+		<basePrice>315</basePrice>
 		<verb>
 			<projectileDef>Bullet_M16Rifle</projectileDef>
 			<warmupTicks>108</warmupTicks>
@@ -175,7 +175,7 @@
 		<texturePath>Things/Item/Equipment/M-24</texturePath>
 		<soundInteract>InteractRifle</soundInteract>
 		<tradersCarry>true</tradersCarry>
-		<basePrice>267</basePrice>
+		<basePrice>303</basePrice>
 		<verb>
 			<projectileDef>Bullet_M24Rifle</projectileDef>
 			<warmupTicks>480</warmupTicks>
@@ -211,7 +211,7 @@
 		<texturePath>Things/Item/Equipment/Uzi</texturePath>
 		<soundInteract>InteractSMG</soundInteract>
 		<tradersCarry>true</tradersCarry>
-		<basePrice>224</basePrice>
+		<basePrice>220</basePrice>
 		<verb>
 			<projectileDef>Bullet_Uzi</projectileDef>
 			<warmupTicks>108</warmupTicks>
@@ -259,7 +259,7 @@
 		<texturePath>Things/Item/Equipment/T-9</texturePath>
 		<soundInteract>InteractRifle</soundInteract>
 		<tradersCarry>true</tradersCarry>
-		<basePrice>244</basePrice>
+		<basePrice>310</basePrice>
 		<verb>
 			<projectileDef>Bullet_T9IncendiaryLauncher</projectileDef>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
@@ -293,7 +293,7 @@
 		<description>A light machine gun.</description>
 		<texturePath>Things/Item/Equipment/L-15</texturePath>
 		<soundInteract>InteractRifle</soundInteract>
-		<basePrice>318</basePrice>
+		<basePrice>340</basePrice>
 		<tradersCarry>true</tradersCarry>
 		<verb>
 			<projectileDef>Bullet_L15LMG</projectileDef>
@@ -329,7 +329,7 @@
     <texturePath>Things/Item/Equipment/R-4</texturePath>
     <soundInteract>InteractChargeRifle</soundInteract>
     <tradersCarry>true</tradersCarry>
-    <basePrice>356</basePrice>
+    <basePrice>358</basePrice>
     <techLevel>Spacer</techLevel>
     <verb>
 		<projectileDef>Bullet_R4ChargeRifle</projectileDef>
@@ -407,7 +407,7 @@
     <description>A multi-barrel machine gun with an extremely high rate of fire. Mechanoid-built.</description>
     <texturePath>Things/Item/Equipment/Minigun</texturePath>
     <soundInteract>InteractRifle</soundInteract>
-    <basePrice>564</basePrice>
+    <basePrice>580</basePrice>
     <techLevel>Spacer</techLevel>
     <weaponTags>
       <li>MechanoidGunHeavy</li>
@@ -537,7 +537,7 @@
     <label>Charge lance</label>
     <description>Charged-shot rail-assisted lance weapon. Fires a single charged shot at high velocity.</description>
     <texturePath>Things/Item/Equipment/ChargeLance</texturePath>
-    <basePrice>200</basePrice>
+    <basePrice>183</basePrice>
     <techLevel>Spacer</techLevel>
     <destroyOnDrop>True</destroyOnDrop>
     <menuHidden>True</menuHidden>

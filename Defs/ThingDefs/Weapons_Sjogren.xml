@@ -78,13 +78,13 @@
 		<texturePath>Things/Item/Equipment/SjogrenShotgun</texturePath>
 		<soundInteract>InteractShotgun</soundInteract>
 		<tradersCarry>True</tradersCarry>
-		<basePrice>300</basePrice>
+		<basePrice>410</basePrice>
 		<verb>
 			<projectileDef>Bullet_SjogrenShotgun</projectileDef>
 			<warmupTicks>150</warmupTicks>
 			<cooldownTicks>180</cooldownTicks>
 			<burstShotCount>4</burstShotCount>
-			<ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+			<ticksBetweenBurstShots>50</ticksBetweenBurstShots>
 			<range>16</range>
       <accuracyTouch>0.60</accuracyTouch>
       <accuracyShort>0.40</accuracyShort>

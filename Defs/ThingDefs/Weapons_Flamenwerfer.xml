@@ -79,7 +79,7 @@ Worth noting that fire doesn't care whose side you're on.
 		<texturePath>Things/Item/Equipment/Flamenwerfer</texturePath>
 		<soundInteract>InteractRifle</soundInteract>
 		<tradersCarry>false</tradersCarry>
-		<basePrice>460</basePrice>
+		<basePrice>530</basePrice>
 		<verb>
 			<projectileDef>FlamenFlame</projectileDef>
 			<ai_IsIncendiary>true</ai_IsIncendiary>

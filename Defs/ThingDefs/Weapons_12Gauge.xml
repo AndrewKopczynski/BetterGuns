@@ -78,7 +78,7 @@
 		<texturePath>Things/Item/Equipment/12Gauge</texturePath>
 		<soundInteract>InteractShotgun</soundInteract>
 		<tradersCarry>True</tradersCarry>
-		<basePrice>282</basePrice>
+		<basePrice>250</basePrice>
 		<verb>
 			<projectileDef>Bullet_12GShotgun</projectileDef>
 			<warmupTicks>128</warmupTicks>
