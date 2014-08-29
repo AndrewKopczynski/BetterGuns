@@ -19,4 +19,24 @@
 		<solidTreatedWellLabel>set</solidTreatedWellLabel>
 		<solidTreatedLabel>poorly set</solidTreatedLabel>
 	</InjuryDef>
+	
+	<InjuryDef>
+		<defName>Toxic</defName>
+		<label>Hives</label>
+		<painPerDamage>4</painPerDamage>
+		<oldLabel>Keloidal scar</oldLabel>
+		<oldPainPerDamage>2</oldPainPerDamage> <!-- Very painful, even after healing -->
+		<naturallyHealed>true</naturallyHealed>
+		<bleeding>0.1</bleeding>
+		<becomeOldChance>12</becomeOldChance> <!-- Significant risk of scarring tissue -->
+		<combine>true</combine>
+		<destroyedLabel>Numbed</destroyedLabel>
+		<destroyedOutLabel>Ruptured</destroyedOutLabel>
+		<treatedWellLabel>bandaged</treatedWellLabel> <!-- You're mostly waiting for it to go away -->
+		<treatedLabel>poorly bandaged</treatedLabel>
+		<innerTreatedWellLabel>sutured</innerTreatedWellLabel>
+		<innerTreatedLabel>poorly sutured</innerTreatedLabel>
+		<solidTreatedWellLabel>set</solidTreatedWellLabel>
+		<solidTreatedLabel>poorly set</solidTreatedLabel>
+	</InjuryDef>
 </InjuryDefs>

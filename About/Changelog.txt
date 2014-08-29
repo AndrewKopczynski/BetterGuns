@@ -72,6 +72,10 @@ so you're not in any damager of bleeding out on the battlefield.
 - Powered armor now covers the entire lower body
 -> Temporary until pants and stuff are introduced
 
+- Added DartToxic damage type
+-> Inflicts the toxic injury
+-> Very high chance of scarring
+
   ///////////
  // v0.05 //
 ///////////

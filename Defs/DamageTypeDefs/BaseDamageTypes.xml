@@ -19,5 +19,15 @@
     <deathMessage>{0} has been beanbagged to death.</deathMessage>
 	<injury>Bruise</injury>
   </DamageTypeDef>
+  
+  <DamageTypeDef>
+    <defName>DartToxic</defName>
+    <harmsHealth>true</harmsHealth>
+    <makesBlood>true</makesBlood>
+    <externalViolence>false</externalViolence>
+	<battleWound>false</battleWound>
+    <deathMessage>{0} has died from internal hemorrhaging.</deathMessage>
+	<injury>Toxic</injury>
+  </DamageTypeDef>
 
 </DamageTypes>
