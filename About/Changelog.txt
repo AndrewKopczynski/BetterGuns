@@ -9,6 +9,13 @@
 !! Reverted Human health scaling from 2.5x to 1.0x. Gun damage is approx 1.2x higher than vanilla still. !!
 - Scrapped all the old values, here's a new list of damage buffs:
 
+- Added DartToxic damage type
+-> Inflicts the toxic injury
+-> Very high chance of scarring
+
+- Implemented the Flaregun, a cheap but no-so-great firearm. Sets stuff on fire
+-> Also made some sounds for the flaregun, still needs a bullet sprite
+
 - Pistol damage remains at 10 from vanilla
 - Lee-Enfield damage up to 22 (from 18)
 - M-16 damage up to 12 (from 7)
@@ -72,9 +79,6 @@ so you're not in any damager of bleeding out on the battlefield.
 - Powered armor now covers the entire lower body
 -> Temporary until pants and stuff are introduced
 
-- Added DartToxic damage type
--> Inflicts the toxic injury
--> Very high chance of scarring
 
   ///////////
  // v0.05 //

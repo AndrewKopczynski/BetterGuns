@@ -142,7 +142,7 @@
 		<description>A simple, accurate, and easy-to-wield handgun; it's a little large for a handgun, though.
 This gun looks like a target-shooting variant, and the slide has been replaced with a silvered one.
 		</description>
-		<texturePath>Things/Item/Equipment/USPMatch</texturePath>
+		<textureFolderPath>Things/Item/Equipment/USPMatch</textureFolderPath>
 		<soundInteract>InteractPistol</soundInteract>
 		<tradersCarry>True</tradersCarry>
 		<basePrice>173</basePrice>
@@ -234,6 +234,47 @@ The unwieldy nature of the prototype also makes it hard to aim in close-quarters
 			<fireSound>ChargeLance_Fire</fireSound>
 		</verb>
 	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Proj_Flaregun</defName>
+		<label>Flare</label>
+		<texturePath>Things/Projectile/Bullet_Small</texturePath> <!-- needs custom thing -->
+		<baseMaterialType>MotePostLight</baseMaterialType>
+		<overdraw>true</overdraw>
+		<thingClass>BulletIncendiary</thingClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Flame</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>30</Speed>
+      <soundAmbient>AmbientFlaregun</soundAmbient>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseGun">
+		<defName>_Flaregun</defName>
+		<label>Flaregun</label>
+		<description>Meant for signaling, not really for firing at others.
+		</description>
+		<texturePath>Things/Item/Equipment/Flaregun</texturePath>
+		<soundInteract>InteractPistol</soundInteract>
+		<tradersCarry>false</tradersCarry>
+		<basePrice>50</basePrice>
+		<techLevel>Midworld</techLevel>
+		<verb>
+			<projectileDef>Proj_Flaregun</projectileDef>
+			<accuracyTouch>0.80</accuracyTouch>
+			<accuracyShort>0.60</accuracyShort>
+			<accuracyMedium>0.40</accuracyMedium>
+			<accuracyLong>0.20</accuracyLong>
+			<forcedMissRadius>2.0</forcedMissRadius>
+			<warmupTicks>120</warmupTicks>
+			<cooldownTicks>120</cooldownTicks>
+			<range>24</range>
+			<fireSound>ShotFlaregun</fireSound>
+		</verb>
+	</ThingDef>
+	
 </ThingDefs>
 	
 	

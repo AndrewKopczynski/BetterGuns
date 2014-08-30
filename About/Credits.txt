@@ -1,17 +1,36 @@
-Ermfilm (https://www.freesound.org/people/ermfilm/)
-- .357 Revolver Sounds
-
-Aaronsiler (https://www.freesound.org/people/aaronsiler/)
-- Musket Sounds
-
-Bog (http://ludeon.com/forums/index.php?action=profile;u=9095)
-- Musket Texture
-
-JarAxe (https://www.freesound.org/people/JarAxe/)
-- Smart Rifle Sounds
+BeatriceMyDarling (http://steamcommunity.com/profiles/76561198007799045/)
+- Co-author, number-cruncher, and weapon balancer.
 
 RawCode (http://ludeon.com/forums/index.php?action=profile;u=9788) 
 - Special thanks for helping with the shotgun hook for multiple projectiles.
 
-BeatriceMyDarling (http://steamcommunity.com/profiles/76561198007799045/)
-- Co-author, number-cruncher, and weapon balancer.
+Bog (http://ludeon.com/forums/index.php?action=profile;u=9095)
+- Musket Texture
+
+Ermfilm (https://www.freesound.org/people/ermfilm/)
+http://creativecommons.org/licenses/by/3.0/
+- .357 Revolver Sounds
+
+Aaronsiler (https://www.freesound.org/people/aaronsiler/)
+http://creativecommons.org/licenses/by/3.0/
+- Musket Sounds
+
+JarAxe (https://www.freesound.org/people/JarAxe/)
+http://creativecommons.org/licenses/by/3.0/
+- Smart Rifle Sounds
+
+aleksnascimento (https://www.freesound.org/people/aleksnascimento/)
+http://creativecommons.org/licenses/by/3.0/
+- Gun sounds remixed into other weapon sounds
+
+Quistard (https://www.freesound.org/people/Quistard/)
+http://creativecommons.org/licenses/by/3.0/
+- Firework sounds remixed into weapon sounds
+
+soundscalpel.com (https://www.freesound.org/people/soundscalpel.com/)
+http://creativecommons.org/licenses/by/3.0/
+- Firework sounds remixed into weapon sounds
+
+captainvince (https://www.freesound.org/people/captainvince/)
+http://creativecommons.org/licenses/by/3.0/
+- Flare sounds remixed into weapon sounds
