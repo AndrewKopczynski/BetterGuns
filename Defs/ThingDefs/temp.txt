@@ -1,0 +1,39 @@
+<ThingDef ParentName="BaseBullet">
+<defName>Bullet_PumpShotgun</defName>
+<label>shotgun blast</label>
+<graphicPath>Things/Projectile/Bullet_Shotgun</graphicPath>
+<graphicClass>Graphic_Single</graphicClass>
+<projectile>
+<damageDef>Bullet</damageDef>
+<damageAmountBase>20</damageAmountBase>
+<speed>55</speed>
+</projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseHumanGun">
+<defName>Gun_PumpShotgun</defName>
+<label>pump shotgun</label>
+<description>Ancient design. Deadly, but short range.</description>
+<graphicPath>Things/Item/Equipment/WeaponRanged/Shotgun</graphicPath>
+<graphicClass>Graphic_Single</graphicClass>
+<soundInteract>InteractShotgun</soundInteract>
+<tradersCarry>true</tradersCarry>
+<statBases>
+<MarketValue>175</MarketValue>
+</statBases>
+<verbs>
+<li>
+<verbClass>Verb_Shoot</verbClass>
+<baseCooldownTicks>40</baseCooldownTicks>
+<hasStandardCommand>true</hasStandardCommand>
+<projectileDef>Bullet_PumpShotgun</projectileDef>
+<warmupTicks>90</warmupTicks>
+<range>16</range>
+<accuracyTouch>0.96</accuracyTouch>
+<accuracyShort>0.87</accuracyShort>
+<accuracyMedium>0.77</accuracyMedium>
+<accuracyLong>0.64</accuracyLong>
+<soundCast>ShotShotgun</soundCast>
+</li>
+</verbs>
+</ThingDef>

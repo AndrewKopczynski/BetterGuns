@@ -1,33 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <DamageTypes>
 
-  <!-- External violence -->
-  <DamageTypeDef>
-	<defName>Pulse</defName>
-	<makesBlood>false</makesBlood> <!-- Cauterizes -->
-    <externalViolence>true</externalViolence>
-    <battleWound>true</battleWound>
-    <deathMessage>{0} died from a pulse round.</deathMessage>
-	<injury>PulseBurn</injury>
-  </DamageTypeDef>
-  
-  <DamageTypeDef>
-	<defName>Beanbag</defName>
-	<makesBlood>false</makesBlood> <!-- LTL weapon -->
-    <externalViolence>false</externalViolence>
-    <battleWound>false</battleWound>
-    <deathMessage>{0} has been beanbagged to death.</deathMessage>
-	<injury>Bruise</injury>
-  </DamageTypeDef>
-  
-  <DamageTypeDef>
-    <defName>DartToxic</defName>
-    <harmsHealth>true</harmsHealth>
-    <makesBlood>true</makesBlood>
-    <externalViolence>false</externalViolence>
-	<battleWound>false</battleWound>
-    <deathMessage>{0} has died from internal hemorrhaging.</deathMessage>
-	<injury>Toxic</injury>
-  </DamageTypeDef>
+	<DamageTypeDef Name="LocalInjuryBase" Abstract="True">
+		<workerClass>DamageType_AddLocalInjury</workerClass>
+	</DamageTypeDef>
+	
+	<!-- External violence -->
+	<DamageTypeDef ParentName="LocalInjuryBase">
+		<defName>Pulse</defName>
+		<label>pulse burn</label>
+		<externalViolence>true</externalViolence>
+		<battleWound>true</battleWound>
+		<deathMessage>{0} died from a pulse round.</deathMessage>
+		<healthDiff>Pulse</healtDiff>
+		<healthDiffSkin>Pulse</healthDiffSkin>
+		<healthDiffSolid>Pulse</healthDiffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageTypeDef>
+	
+	<DamageTypeDef ParentName="LocalInjuryBase">
+		<defName>Beanbag</defName>
+		<label>bean bag bruise</label>
+		<externalViolence>false</externalViolence>
+		<battleWound>false</battleWound>
+		<deathMessage>{0} has been beanbagged to death.</deathMessage>
+		<healthDiff>Bruise</healtDiff>
+		<healthDiffSkin>Bruise</healthDiffSkin>
+		<healthDiffSolid>Crack</healthDiffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+	</DamageTypeDef>
+	
+	<DamageTypeDef ParentName="LocalInjuryBase">
+		<defName>Toxic</defName>
+		<label>pulse burn</label>
+		<externalViolence>false</externalViolence>
+		<battleWound>false</battleWound>
+		<deathMessage>{0} has died from internal hemorrhaging.</deathMessage>
+		<healthDiff>Toxic</healtDiff>
+		<healthDiffSkin>Toxic</healthDiffSkin>
+		<healthDiffSolid>Crack</healthDiffSolid>
+		<harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageTypeDef>
 
 </DamageTypes>
