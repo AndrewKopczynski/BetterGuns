@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+	<ThingDef Name="BaseZModGun" Abstract="True">
+		<category>Item</category>
+		<eType>Equipment</eType>
+		<thingClass>Equipment</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>10</pathCost>
+		<useStandardHealth>True</useStandardHealth>
+		<selectable>True</selectable>
+		<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		<statBases>
+			<MaxHealth>100</MaxHealth>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Midworld</techLevel>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+		</comps>
+		<smeltProducts>
+			<Steel>10</Steel>
+		</smeltProducts>
+	</ThingDef>
+	
+	<ThingDef Name="BaseZModBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>bullet</label>
+		<useStandardHealth>False</useStandardHealth>
+		<neverMultiSelect>True</neverMultiSelect>
+		<shaderType>Transparent</shaderType>
+	</ThingDef>
+
+	<!-- 12g shotgun -->
+
+	<ThingDef ParentName="BaseZModBullet">
+		<defName>Bullet_12GShotgun</defName>
+		<label>12 gauge buckshot</label>
+		<graphicPath>Things/Projectile/Bullet_Small</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>6</DamageAmountBase>
+			<Speed>70</Speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseZModGun">
+		<defName>Gun_PumpShotgun</defName> <!-- Replaces PumpShotgun -->
+		<label>12 Gauge</label>
+		<description>A 12 gauge shotgun, perfect for putting several nasty holes through its targets.
+		</description>
+		<graphicPath>Things/Item/Equipment/12Gauge</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractShotgun</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>250</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>ZMod._Buckshot</verbClass>
+				<baseCooldownTicks>40</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_12GShotgun</projectileDef>
+				<accuracyTouch>0.98</accuracyTouch>
+				<accuracyShort>0.70</accuracyShort>
+				<accuracyMedium>0.48</accuracyMedium>
+				<accuracyLong>0.12</accuracyLong>
+				<warmupTicks>90</warmupTicks>
+				<range>24</range>
+				<soundCast>ShotShotgun</soundCast>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- Flamenwerfer -->
+	
+	<ThingDef ParentName="BaseZModBullet">
+		<defName>Projectile_Flammenwerfer</defName>
+		<label>flamethrower flame</label>
+		<graphicPath>Things/Special/Fire/FireA</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<thingClass>Projectile_Explosive</thingClass>
+		<!--
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Flame</damageDef>
+			<DamageAmountBase>1</DamageAmountBase>
+			<Speed>20</Speed>
+		</projectile>
+		-->
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>20</speed>
+			<explosionRadius>0.5</explosionRadius >
+			<postExplosionSpawnThingDef>Puddle_Fuel</postExplosionSpawnThingDef>
+			<explosionSpawnChance>0.3</explosionSpawnChance>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseZModGun">
+		<defName>Kinetic_Flammenwerfer</defName> <!-- Replaces PumpShotgun -->
+		<label>Makeshift Flamethrower</label>
+		<description>It's a flamethrower. It throws flames.
+Worth noting that fire doesn't care whose side you're on.
+		</description>
+		<graphicPath>Things/Item/Equipment/Flamenwerfer</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractRifle</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>530</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<ai_IsIncendiary>true</ai_IsIncendiary>
+				<baseCooldownTicks>180</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Projectile_Flammenwerfer</projectileDef>
+				<accuracyTouch>0.05</accuracyTouch>
+				<accuracyShort>0.03</accuracyShort>
+				<accuracyMedium>0.02</accuracyMedium>
+				<accuracyLong>0.01</accuracyLong>
+				<warmupTicks>90</warmupTicks>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+				<burstShotCount>60</burstShotCount>
+				<range>24</range>
+				<soundCast>ShotFlamenwerfer</soundCast>
+			</li>
+		</verbs>
+	</ThingDef>
+</ThingDefs>

@@ -50,7 +50,7 @@
 <!-- 9mm pistol -->
 
 	<ThingDef ParentName="BaseBullet">
-	<defName>Bullet_Pistol</defName>
+		<defName>Bullet_Pistol</defName>
 		<label>9mm bullet</label>
 		<graphicPath>Things/Projectile/Bullet_Small</graphicPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -773,5 +773,4 @@
 			</li>
 		</verbs>
 	</ThingDef>
-	
 </ThingDefs>
