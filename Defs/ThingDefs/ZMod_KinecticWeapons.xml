@@ -44,10 +44,10 @@
 		<shaderType>Transparent</shaderType>
 	</ThingDef>
 
-	<!-- 12g shotgun -->
+	<!-- 12 gauge pump action shotgun -->
 
 	<ThingDef ParentName="BaseZModBullet">
-		<defName>Bullet_12GShotgun</defName>
+		<defName>Bullet_12Gauge</defName>
 		<label>12 gauge buckshot</label>
 		<graphicPath>Things/Projectile/Bullet_Small</graphicPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
 
 	<ThingDef ParentName="BaseZModGun">
 		<defName>Gun_PumpShotgun</defName> <!-- Replaces PumpShotgun -->
-		<label>12 Gauge</label>
+		<label>12 gauge shotgun</label>
 		<description>A 12 gauge shotgun, perfect for putting several nasty holes through its targets.
 		</description>
 		<graphicPath>Things/Item/Equipment/12Gauge</graphicPath>
@@ -76,7 +76,7 @@
 				<verbClass>ZMod._Buckshot</verbClass>
 				<baseCooldownTicks>40</baseCooldownTicks>
 				<hasStandardCommand>true</hasStandardCommand>
-				<projectileDef>Bullet_12GShotgun</projectileDef>
+				<projectileDef>Bullet_12Gauge</projectileDef>
 				<accuracyTouch>0.98</accuracyTouch>
 				<accuracyShort>0.70</accuracyShort>
 				<accuracyMedium>0.48</accuracyMedium>
@@ -88,22 +88,322 @@
 		</verbs>
 	</ThingDef>
 	
-	<!-- Flamenwerfer -->
+	<!-- danish semi-automatic slide-operated "sjogren" shotgun -->
+	<!-- uses the same ammo as the 12 gauge shotgun -->
+
+	<ThingDef ParentName="BaseZModGun">
+		<defName>Gun_Sjogren</defName> <!-- Replaces PumpShotgun -->
+		<label>Sjögren Shotgun</label>
+		<description>An old, slide-operated semi-automatic shotgun. Loaded with buckshot.
+		</description>
+		<graphicPath>Things/Item/Equipment/SjogrenShotgun</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractShotgun</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>300</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>ZMod._Buckshot</verbClass>
+				<baseCooldownTicks>120</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_12Gauge</projectileDef>
+				<accuracyTouch>0.80</accuracyTouch>
+				<accuracyShort>0.70</accuracyShort>
+				<accuracyMedium>0.60</accuracyMedium>
+				<accuracyLong>0.40</accuracyLong>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<warmupTicks>180</warmupTicks>
+				<range>16</range>
+				<soundCast>ShotShotgun</soundCast>
+			</li>
+		</verbs>
+	</ThingDef>
 	
+	<!-- .357 magnum 6-inch barrel revolver -->
+	
+	<ThingDef ParentName="BaseZModBullet">
+		<defName>Bullet_357Revolver</defName>
+		<label>.357 magnum bullet</label>
+		<graphicPath>Things/Projectile/Bullet_Small</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>15</DamageAmountBase>
+			<Speed>65</Speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseZModGun">
+		<defName>Gun_357Revolver</defName>
+		<label>.357 Revolver</label>
+		<description>A .357 Magnum revolver fitted with an orange fiber-optic front sight and filled with six shots of serious pain.
+		</description>
+		<graphicPath>Things/Item/Equipment/357Revolver</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractPistol</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>200</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<baseCooldownTicks>90</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_357Revolver</projectileDef>
+				<accuracyTouch>0.95</accuracyTouch>
+				<accuracyShort>0.90</accuracyShort>
+				<accuracyMedium>0.80</accuracyMedium>
+				<accuracyLong>0.70</accuracyLong>
+				<warmupTicks>60</warmupTicks>
+				<range>30</range>
+				<soundCast>Shot357Revolver</soundCast>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- usp match w/ barrel weight -->
+	
+	<ThingDef ParentName="BaseZModBullet">
+		<defName>Bullet_USPMatch</defName>
+		<label>.45 bullet</label>
+		<graphicPath>Things/Projectile/Bullet_Small</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>10</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseZModGun">
+		<defName>Gun_USPMatch</defName>
+		<label>USP Match</label>
+		<description>A USP Match with a barrel weight on the end. Slightly nicer than your average pistol.
+		</description>
+		<graphicPath>Things/Item/Equipment/USPMatch</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractPistol</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>90</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<baseCooldownTicks>40</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_USPMatch</projectileDef>
+				<accuracyTouch>0.91</accuracyTouch>
+				<accuracyShort>0.71</accuracyShort>
+				<accuracyMedium>0.55</accuracyMedium>
+				<accuracyLong>0.35</accuracyLong>
+				<warmupTicks>54</warmupTicks>
+				<range>24</range>
+				<soundCast>ShotPistol</soundCast>
+			</li>
+		</verbs>
+		<equippedStatOffsets>
+			<AimingDelayFactor>0.15</AimingDelayFactor>
+		</equippedStatOffsets>
+	</ThingDef>
+	
+	<!-- usp match silver slide variant -->
+	<ThingDef ParentName="BaseZModGun">
+		<defName>Gun_USPMatch_Silver</defName>
+		<label>USP Match (silver)</label>
+		<description>A USP Match with a barrel weight on the end. Slightly nicer than your average pistol.
+		</description>
+		<graphicPath>Things/Item/Equipment/USPMatch_Silver</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractPistol</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>90</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<baseCooldownTicks>40</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_USPMatch</projectileDef>
+				<accuracyTouch>0.91</accuracyTouch>
+				<accuracyShort>0.71</accuracyShort>
+				<accuracyMedium>0.55</accuracyMedium>
+				<accuracyLong>0.35</accuracyLong>
+				<warmupTicks>54</warmupTicks>
+				<range>24</range>
+				<soundCast>ShotPistol</soundCast>
+			</li>
+		</verbs>
+		<equippedStatOffsets>
+			<AimingDelayFactor>0.15</AimingDelayFactor>
+		</equippedStatOffsets>
+	</ThingDef>
+	
+	<!-- police computer-aided S.M.A.R.T. rifle -->
+	<!-- (special munitions and reticulated targeting) -->
+	
+	<ThingDef ParentName="BaseZModBullet">
+		<defName>Kinetic_SmartRifle</defName>
+		<label>S.M.A.R.T. rifle pulse round</label>
+		<graphicPath>Things/Projectile/ChargeLanceShot</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Pulse</damageDef>
+			<DamageAmountBase>28</DamageAmountBase>
+			<Speed>160</Speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseZModGun">
+		<defName>Gun_SmartRifle</defName>
+		<label>S.M.A.R.T. rifle</label>
+		<description>An advanced pulse-based police rifle from a dystopian world. Despite the advanced software in the optics, it cannot recognize non-living things as valid targets, and still suffers in short range encounters due to the large nature of the rifle and the acquisition time.
+		</description>
+		<graphicPath>Things/Item/Equipment/SmartRifle</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractRifle</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>600</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<baseCooldownTicks>120</baseCooldownTicks>
+				<hasStandardCommand>false</hasStandardCommand>
+				<projectileDef>Kinetic_SmartRifle</projectileDef>
+				<accuracyTouch>0.60</accuracyTouch>
+				<accuracyShort>0.80</accuracyShort>
+				<accuracyMedium>1.00</accuracyMedium>
+				<accuracyLong>1.20</accuracyLong>
+				<warmupTicks>240</warmupTicks>
+				<range>55</range>
+				<soundCast>ShotSmartRifle</soundCast>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SniperRifle</li>
+			<li>AdvancedGun</li>
+		</weaponTags>
+		<equippedStatOffsets>
+			<ShootingAccuracy>0.20</ShootingAccuracy>
+		</equippedStatOffsets>
+	</ThingDef>
+	
+	<!-- 17th century 15mm ball round musket (joke weapon) -->
+	<!-- TODO: custom shoot verb with gunpower smoke -->
+	
+	<ThingDef ParentName="BaseZModBullet">
+		<defName>Bullet_Musket</defName>
+		<label>15mm musket round shot</label>
+		<graphicPath>Things/Projectile/Bullet_Small</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>35</DamageAmountBase>
+			<Speed>80</Speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseZModGun">
+		<defName>Gun_Musket</defName>
+		<label>Smoothbore musket</label>
+		<description>A smooth bore, single-shot gun with a lenghtly reload time. Deadly, but impractically inaccurate compared to conventional midworld weapons that have rifling.
+		</description>
+		<graphicPath>Things/Item/Equipment/Musket</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractRifle</soundInteract>
+		<tradersCarry>false</tradersCarry>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<baseCooldownTicks>420</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_Musket</projectileDef>
+				<accuracyTouch>0.80</accuracyTouch>
+				<accuracyShort>0.50</accuracyShort>
+				<accuracyMedium>0.10</accuracyMedium>
+				<accuracyLong>0.01</accuracyLong>
+				<warmupTicks>240</warmupTicks>
+				<range>55</range>
+				<soundCast>ShotMusket</soundCast>
+			</li>
+		</verbs>
+		<equippedStatOffsets>
+			<ShootingAccuracy>-0.50</ShootingAccuracy>
+		</equippedStatOffsets>
+	</ThingDef>
+	
+	<!-- prototype midworld e.x. gauss rifle -->
+	<ThingDef ParentName="BaseZModBullet">
+		<defName>Kinetic_GaussGun</defName>
+		<label>superheated railgun slug</label>
+		<graphicPath>Things/Projectile/Bullet_Small</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>28</DamageAmountBase>
+			<Speed>80</Speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseZModGun">
+		<defName>Gun_GaussGun</defName>
+		<label>Railgun rifle</label>
+		<description>It's difficult to tell where this weapon comes from -- it lacks all the qualities of a spacer-tech gun. The rifle's ugly, heavy, and it fires one monsterous kinetic punch at a time.
+		</description>
+		<graphicPath>Things/Item/Equipment/GaussGun</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractRifle</soundInteract>
+		<tradersCarry>false</tradersCarry>
+		<statBases>
+			<MarketValue>600</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<baseCooldownTicks>120</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Kinetic_GaussGun</projectileDef>
+				<accuracyTouch>0.60</accuracyTouch>
+				<accuracyShort>0.65</accuracyShort>
+				<accuracyMedium>0.80</accuracyMedium>
+				<accuracyLong>0.065</accuracyLong>
+				<warmupTicks>60</warmupTicks>
+				<range>32</range>
+				<soundCast>ChargeLance_Fire</soundCast>
+			</li>
+		</verbs>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>AdvancedGun</li>
+			<li>GunHeavy</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<!-- homemade/makeshift flamenwerfer -->
+	<!-- Have to work on custom verbs more
 	<ThingDef ParentName="BaseZModBullet">
 		<defName>Projectile_Flammenwerfer</defName>
 		<label>flamethrower flame</label>
 		<graphicPath>Things/Special/Fire/FireA</graphicPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<thingClass>Projectile_Explosive</thingClass>
-		<!--
-		<projectile>
-			<flyOverhead>false</flyOverhead>
-			<damageDef>Flame</damageDef>
-			<DamageAmountBase>1</DamageAmountBase>
-			<Speed>20</Speed>
-		</projectile>
-		-->
 		<projectile>
 			<damageDef>Flame</damageDef>
 			<damageAmountBase>1</damageAmountBase>
@@ -115,7 +415,7 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseZModGun">
-		<defName>Kinetic_Flammenwerfer</defName> <!-- Replaces PumpShotgun -->
+		<defName>Kinetic_Flammenwerfer</defName>
 		<label>Makeshift Flamethrower</label>
 		<description>It's a flamethrower. It throws flames.
 Worth noting that fire doesn't care whose side you're on.
@@ -146,4 +446,5 @@ Worth noting that fire doesn't care whose side you're on.
 			</li>
 		</verbs>
 	</ThingDef>
+	-->
 </ThingDefs>
