@@ -166,6 +166,52 @@
 		</verbs>
 	</ThingDef>
 	
+	<!-- h&k mp7 smg -->
+	
+	<ThingDef ParentName="BaseZModBullet">
+		<defName>Bullet_MP7</defName>
+		<label>9mm SMG bullet</label>
+		<graphicPath>Things/Projectile/Bullet_Small</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<DamageAmountBase>8</DamageAmountBase>
+			<Speed>55</Speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseZModGun">
+		<defName>Gun_MP7</defName>
+		<label>MP7</label>
+		<description>A compact sub-machine gun that performs well in close-quarters.
+		</description>
+		<graphicPath>Things/Item/Equipment/MP7</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractSMG</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<statBases>
+			<MarketValue>400</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<baseCooldownTicks>40</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_MP7</projectileDef>
+				<accuracyTouch>0.90</accuracyTouch>
+				<accuracyShort>0.75</accuracyShort>
+				<accuracyMedium>0.40</accuracyMedium>
+				<accuracyLong>0.20</accuracyLong>
+				<warmupTicks>90</warmupTicks>
+				<range>24</range>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>ShotUzi</soundCast>
+			</li>
+		</verbs>
+	</ThingDef>
+	
 	<!-- usp match w/ barrel weight -->
 	
 	<ThingDef ParentName="BaseZModBullet">

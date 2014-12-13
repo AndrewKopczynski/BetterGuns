@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+	<ThingDef Name="BaseMeleeWeapon" Abstract="True">
+		<category>Item</category>
+		<eType>Equipment</eType>
+		<thingClass>Equipment</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>10</pathCost>
+		<useStandardHealth>True</useStandardHealth>
+		<selectable>True</selectable>
+		<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		<statBases>
+			<MaxHealth>100</MaxHealth>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Midworld</techLevel>
+		<weaponTags>
+			<li>Melee</li>
+		</weaponTags>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<comps>
+			<li>
+				<compClass>CompForbiddable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<smeltProducts>
+			<Steel>10</Steel>
+		</smeltProducts>
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<skillToGain>Crafting</skillToGain>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>TableSmithing</li>
+			</recipeUsers>
+			<skillQualityDeterminant>Crafting</skillQualityDeterminant>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Name="BaseMeleeWeapon_Sharp" ParentName="BaseMeleeWeapon" Abstract="True">
+		<recipeMaker>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<exceptedThingDefs>
+					<li>Silver</li>
+					<li>Gold</li>
+					<li>WoodLog</li>
+				</exceptedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="BaseMeleeWeapon_Blunt" ParentName="BaseMeleeWeapon" Abstract="True">
+		<recipeMaker>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<exceptedThingDefs>
+					<li>Silver</li>
+					<li>Gold</li>
+				</exceptedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+	</ThingDef>
+
+<!-- gladius -->
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>MeleeWeapon_Gladius</defName>
+		<label>gladius</label>
+		<description>A short sword of ancient design. Good for stabbing or slashing.</description>
+		<graphicPath>Things/Item/Equipment/WeaponMelee/Gladius</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractPistol</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<costStuffCount>50</costStuffCount>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<baseCooldownTicks>115</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageBaseAmount>13</meleeDamageBaseAmount>
+				<meleeDamageDef>Cut</meleeDamageDef>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- long sword -->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>MeleeWeapon_LongSword</defName>
+		<label>longsword</label>
+		<description>The ancient weapon of kings, the longsword can be used for slashing or stabbing and is deadly in the right hands.</description>
+		<graphicPath>Things/Item/Equipment/WeaponMelee/LongSword</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractPistol</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<baseCooldownTicks>150</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageBaseAmount>20</meleeDamageBaseAmount>
+				<meleeDamageDef>Cut</meleeDamageDef>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- knife -->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>MeleeWeapon_Knife</defName>
+		<label>knife</label>
+		<description>One of humankind's oldest tools, the knife is both an everyday tool and a deadly weapon.</description>
+		<graphicPath>Things/Item/Equipment/WeaponMelee/Knife</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractPistol</soundInteract>
+		<tradersCarry>True</tradersCarry>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<baseCooldownTicks>100</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageBaseAmount>9</meleeDamageBaseAmount>
+				<meleeDamageDef>Cut</meleeDamageDef>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- shiv -->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>MeleeWeapon_Shiv</defName>
+		<label>shiv</label>
+		<description>An improvised knife-like weapon.</description>
+		<graphicPath>Things/Item/Equipment/WeaponMelee/Shiv</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<soundInteract>InteractPistol</soundInteract>
+		<tradersCarry>false</tradersCarry>
+		<costStuffCount>10</costStuffCount>
+		<statBases>
+			<WorkToMake>300</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<baseCooldownTicks>90</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageBaseAmount>8</meleeDamageBaseAmount>
+				<meleeDamageDef>Cut</meleeDamageDef>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- spear -->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>MeleeWeapon_Spear</defName>
+		<label>spear</label>
+		<description>A polearm tipped with a sharp point for stabbing opponents in melee combat.</description>
+		<graphicPath>Things/Item/Equipment/WeaponMelee/Spear</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>Neolithic</li>
+			<li>NeolithicMelee</li>
+		</weaponTags>
+		<tradersCarry>true</tradersCarry>
+		<costStuffCount>90</costStuffCount>
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<baseCooldownTicks>135</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageBaseAmount>15</meleeDamageBaseAmount>
+				<meleeDamageDef>Stab</meleeDamageDef>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- mace -->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt">
+		<defName>MeleeWeapon_Mace</defName>
+		<label>mace</label>
+		<description>A refined club, engineered for efficient swinging and deadly impacts.</description>
+		<graphicPath>Things/Item/Equipment/WeaponMelee/Mace</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<tradersCarry>true</tradersCarry>
+		<costStuffCount>75</costStuffCount>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<baseCooldownTicks>130</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageBaseAmount>15</meleeDamageBaseAmount>
+				<meleeDamageDef>Blunt</meleeDamageDef>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- club -->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt">
+		<defName>MeleeWeapon_Club</defName>
+		<label>club</label>
+		<description>The oldest human weapon - a shaped piece of wood for bashing enemies to death. Primitive but effective.</description>
+		<graphicPath>Things/Item/Equipment/WeaponMelee/Club</graphicPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>Neolithic</li>
+			<li>NeolithicMelee</li>
+		</weaponTags>
+		<tradersCarry>false</tradersCarry>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<baseCooldownTicks>190</baseCooldownTicks>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageBaseAmount>17</meleeDamageBaseAmount>
+				<meleeDamageDef>Blunt</meleeDamageDef>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+</ThingDefs>
