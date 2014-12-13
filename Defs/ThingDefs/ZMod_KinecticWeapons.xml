@@ -169,7 +169,7 @@
 	<!-- h&k mp7 smg -->
 	
 	<ThingDef ParentName="BaseZModBullet">
-		<defName>Bullet_MP7</defName>
+		<defName>Bullet_MP7SMG</defName>
 		<label>9mm SMG bullet</label>
 		<graphicPath>Things/Projectile/Bullet_Small</graphicPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -182,7 +182,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseZModGun">
-		<defName>Gun_MP7</defName>
+		<defName>Gun_MP7SMG</defName>
 		<label>MP7</label>
 		<description>A compact sub-machine gun that performs well in close-quarters.
 		</description>
@@ -198,7 +198,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<baseCooldownTicks>40</baseCooldownTicks>
 				<hasStandardCommand>true</hasStandardCommand>
-				<projectileDef>Bullet_MP7</projectileDef>
+				<projectileDef>Bullet_MP7SMG</projectileDef>
 				<accuracyTouch>0.90</accuracyTouch>
 				<accuracyShort>0.75</accuracyShort>
 				<accuracyMedium>0.40</accuracyMedium>
